@@ -1,8 +1,19 @@
 # Dynamical Systems Analysis of Inflation
 
-Numerical study of dynamical systems with an application to the inflationary dynamics of the Starobinsky model.
+## Overview
 
-This project introduces phase-space analysis using the damped harmonic oscillator as a simple physical example, and then applies the same framework to investigate the inflationary attractor of the Starobinsky model.
+This project uses numerical dynamical-systems methods to study attractor behavior in physical systems, with an application to inflationary cosmology.
+
+A damped harmonic oscillator is first used to illustrate fixed points, phase-space trajectories, eigenvalue classification, and different types of attractors. The same approach is then applied to the nonlinear dynamical system describing the background evolution of the Starobinsky inflationary model.
+
+The inflationary analysis investigates:
+
+- dependence on initial conditions;
+- phase-space attractor behavior;
+- the accuracy of the slow-roll approximation;
+- the relative deviation from the slow-roll attractor;
+- the evolution of the first slow-roll parameter;
+- the end of inflation.
 
 ## 1. Damped Harmonic Oscillator
 
