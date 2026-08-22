@@ -107,4 +107,11 @@ for ax, (title, delta) in zip(axes, cases):
 
 
 plt.tight_layout()
+
+plt.savefig(
+    "damped_oscillator.png",
+    dpi=300,
+    bbox_inches="tight"
+)
+
 plt.show()
