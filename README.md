@@ -249,3 +249,92 @@ $$
 The numerical trajectories are compared with this analytical curve in the phase-space plot below.
 
 ![Inflationary phase-space attractor](figures/phase_space_attractor.png)
+
+## 5. Slow-Roll Approximation
+
+The numerical solution can be compared with the analytical slow-roll attractor to quantify the accuracy of the slow-roll approximation.
+
+The absolute deviation is defined as
+
+$$
+\Delta\chi
+=
+\chi_{\rm numerical}
+-
+\chi_{\rm SR}.
+$$
+
+The relative deviation is defined by
+
+$$
+\delta_{\rm SR}
+=
+\left|
+\frac{
+\chi_{\rm numerical}-\chi_{\rm SR}
+}{
+\chi_{\rm SR}
+}
+\right|.
+$$
+
+The trajectories initially exhibit a transient phase as they approach the slow-roll attractor. After this transient, the relative deviation remains small over a substantial part of inflation.
+
+As inflation approaches its end, the deviation from the slow-roll solution increases, indicating the gradual breakdown of the slow-roll approximation.
+
+### Absolute deviation
+
+![Deviation from the slow-roll attractor](figures/slow_roll_deviation.png)
+
+### Relative deviation
+
+![Relative error of the slow-roll approximation](figures/slow_roll_relative_error.png)
+
+## 6. End of Inflation
+
+The end of inflation is determined using the first slow-roll parameter,
+
+$$
+\epsilon
+=
+-\frac{H'}{H}.
+$$
+
+From the dynamical equation
+
+$$
+h'=-4\pi h\chi^2,
+$$
+
+we obtain
+
+$$
+\boxed{\epsilon=4\pi\chi^2}.
+$$
+
+Inflation occurs while
+
+$$
+\epsilon<1,
+$$
+
+and ends when
+
+$$
+\boxed{\epsilon=1}.
+$$
+
+The numerical integration uses this condition as an event to determine the number of e-folds at the end of inflation.
+
+For example, for several initial values of $\chi_0$, the numerical results are:
+
+| $\chi_0$ | $N_{\rm end}$ |
+|---:|---:|
+| $-0.20$ | $51.17$ |
+| $-0.10$ | $53.68$ |
+| $0.00$ | $56.06$ |
+| $+0.10$ | $58.52$ |
+
+The trajectories therefore give different total durations of inflation for different initial velocities, while converging toward the same inflationary attractor in phase space.
+
+![First slow-roll parameter](figures/epsilon_vs_N.png)
