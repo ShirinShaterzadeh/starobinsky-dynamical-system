@@ -200,3 +200,52 @@ The resulting trajectories are studied in the phase space
 $$
 (\psi,\chi).
 $$
+
+## 3. Numerical Method
+
+The coupled differential equations are solved numerically using the adaptive fourth-order/fifth-order Runge–Kutta method (`RK45`) implemented in `scipy.integrate.solve_ivp`.
+
+The numerical integration is performed with
+
+```python
+method="RK45"
+
+The numerical integration is performed with the following numerical parameters:
+
+```python
+rtol = 1e-8
+atol = 1e-10
+max_step = 0.05
+```
+
+These parameters control the relative tolerance, absolute tolerance, and maximum integration step size, respectively.
+
+## 4. Phase-Space Attractor
+
+The inflationary dynamics are studied in the phase space $(\psi,\chi)$, where
+
+$$
+\chi=\frac{d\psi}{dN}.
+$$
+
+Several trajectories are generated using different initial values of $\chi_0$, while keeping $\psi_0$ fixed.
+
+The numerical trajectories converge toward a common inflationary trajectory, demonstrating the attractor behavior of the system.
+
+The analytical slow-roll attractor is
+
+$$
+\chi_{\rm SR}(\psi)
+=
+-\frac{1}{4\pi}
+\sqrt{\frac{2}{3}}
+\frac{
+e^{-\sqrt{2/3}\psi}
+}{
+1-e^{-\sqrt{2/3}\psi}
+}.
+$$
+
+The numerical trajectories are compared with this analytical curve in the phase-space plot below.
+
+![Inflationary phase-space attractor](figures/phase_space_attractor.png)
