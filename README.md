@@ -8,9 +8,9 @@ This project introduces phase-space analysis using the damped harmonic oscillato
 
 As a simple physical example of a dynamical system, we consider the damped harmonic oscillator
 
-\[
+$$
 \ddot{x}+\delta\dot{x}+\omega^2x=0,
-\]
+$$
 
 where \(\omega\) is the natural frequency and \(\delta\) is the damping coefficient.
 
