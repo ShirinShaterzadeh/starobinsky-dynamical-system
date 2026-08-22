@@ -235,8 +235,7 @@ The numerical trajectories converge toward a common inflationary trajectory, dem
 The analytical slow-roll attractor is
 
 $$
-\chi_{\rm SR}(\psi)
-=
+\chi_{\rm SR}(\psi)=
 -\frac{1}{4\pi}
 \sqrt{\frac{2}{3}}
 \frac{
@@ -257,18 +256,15 @@ The numerical solution can be compared with the analytical slow-roll attractor t
 The absolute deviation is defined as
 
 $$
-\Delta\chi
-=
-\chi_{\rm numerical}
--
+\Delta\chi=
+\chi_{\rm numerical}-
 \chi_{\rm SR}.
 $$
 
 The relative deviation is defined by
 
 $$
-\delta_{\rm SR}
-=
+\delta_{\rm SR}=
 \left|
 \frac{
 \chi_{\rm numerical}-\chi_{\rm SR}
@@ -295,8 +291,7 @@ As inflation approaches its end, the deviation from the slow-roll solution incre
 The end of inflation is determined using the first slow-roll parameter,
 
 $$
-\epsilon
-=
+\epsilon =
 -\frac{H'}{H}.
 $$
 
@@ -329,6 +324,7 @@ The numerical integration uses this condition as an event to determine the numbe
 For example, for several initial values of $\chi_0$, the numerical results are:
 
 | $\chi_0$ | $N_{\rm end}$ |
+
 |---:|---:|
 | $-0.20$ | $51.17$ |
 | $-0.10$ | $53.68$ |
@@ -353,3 +349,20 @@ The main results are:
 - For the initial conditions considered, the total number of e-folds is of order $50$–$60$ for several trajectories.
 
 Together, these results illustrate how phase-space methods and numerical integration can be used to study the stability and evolution of inflationary solutions.
+
+## 8. Limitations and Possible Extensions
+
+The present project focuses on the homogeneous background dynamics of inflation and the behavior of the inflationary attractor.
+
+The post-inflationary oscillatory phase and reheating are not explicitly modeled. A complete treatment of reheating would require specifying interactions between the inflaton and other fields and including the corresponding energy-transfer equations.
+
+Possible extensions of the project include:
+
+- studying the post-inflationary oscillatory regime in cosmic time;
+- implementing an explicit reheating model;
+- calculating inflationary observables such as the scalar spectral index $n_s$ and tensor-to-scalar ratio $r$;
+- comparing the Starobinsky model with other inflationary potentials;
+- extending the analysis to generalized $\alpha$-attractor models;
+- performing a more systematic stability analysis of the inflationary fixed points.
+
+The current project therefore provides a focused numerical study of the inflationary dynamical system, while leaving these extensions for future work.
