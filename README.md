@@ -132,6 +132,12 @@ $$
 
 This provides a simple example of how the eigenvalues of a dynamical system determine the local phase-space behavior and the type of attractor.
 
+### Phase-space trajectories
+
+The numerical phase portraits for the three damping regimes are shown below.
+
+![Damped harmonic oscillator phase portraits](figures/damped_oscillator.png)
+
 ## 2. Starobinsky Inflation as a Dynamical System
 
 The same phase-space approach can be applied to the dynamics of inflation.
