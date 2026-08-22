@@ -338,3 +338,18 @@ For example, for several initial values of $\chi_0$, the numerical results are:
 The trajectories therefore give different total durations of inflation for different initial velocities, while converging toward the same inflationary attractor in phase space.
 
 ![First slow-roll parameter](figures/epsilon_vs_N.png)
+
+## 7. Summary of Results
+
+The numerical analysis demonstrates the attractor behavior of the Starobinsky inflationary system.
+
+The main results are:
+
+- Trajectories with different initial field velocities converge toward a common inflationary attractor in the $(\psi,\chi)$ phase space.
+- The initial transient is rapidly damped, showing that the system loses sensitivity to the initial value of $\chi$.
+- The numerical trajectories remain close to the analytical slow-roll attractor over a substantial part of inflation.
+- The relative deviation from the slow-roll approximation remains at the sub-percent level during the main slow-roll regime and increases as inflation approaches its end.
+- The first slow-roll parameter $\epsilon=4\pi\chi^2$ remains below unity during inflation and reaches $\epsilon=1$ at the end of inflation.
+- For the initial conditions considered, the total number of e-folds is of order $50$–$60$ for several trajectories.
+
+Together, these results illustrate how phase-space methods and numerical integration can be used to study the stability and evolution of inflationary solutions.
