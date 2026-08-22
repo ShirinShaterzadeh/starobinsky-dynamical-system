@@ -108,8 +108,7 @@ The three damping regimes are solved numerically using `scipy.integrate.solve_iv
 For each regime, several different initial conditions are used:
 
 $$
-(x_0,y_0)
-=
+(x_0, y_0)=
 (1,0),\,
 (0,1),\,
 (-1,0.5),\,
@@ -132,3 +131,72 @@ $$
 $$
 
 This provides a simple example of how the eigenvalues of a dynamical system determine the local phase-space behavior and the type of attractor.
+
+## 2. Starobinsky Inflation as a Dynamical System
+
+The same phase-space approach can be applied to the dynamics of inflation.
+
+In this project, the background dynamics of the Starobinsky model are formulated as a nonlinear dynamical system and solved numerically.
+
+The variables are normalized with respect to the reduced Planck mass:
+
+$$
+h=\frac{H}{M_{\rm Pl}},
+$$
+
+$$
+\psi=\frac{\phi}{M_{\rm Pl}},
+$$
+
+and
+
+$$
+\chi=\psi'=\frac{d\psi}{dN},
+$$
+
+where $N$ is the number of e-folds and a prime denotes differentiation with respect to $N$.
+
+The dynamical system is
+
+$$
+h'=-4\pi h\chi^2,
+$$
+
+$$
+\psi'=\chi,
+$$
+
+and
+
+$$
+\chi'=
+4\pi\chi^3
+-3\chi -
+\frac{
+2\alpha^2\sqrt{2/3}\,
+e^{-\sqrt{2/3}\psi}
+\left(1-e^{-\sqrt{2/3}\psi}\right)
+}{
+h^2
+}.
+$$
+
+The initial Hubble parameter is determined from the Friedmann constraint.
+
+For the numerical analysis, the parameters are chosen as
+
+$$
+\alpha=0.01,
+\qquad
+\psi_0=2.12.
+$$
+
+Different initial values of $\chi_0$ are considered in order to investigate the sensitivity of the dynamics to the initial field velocity.
+
+The system is integrated using the adaptive fourth/fifth-order Runge–Kutta method (`RK45`) implemented in `scipy.integrate.solve_ivp`.
+
+The resulting trajectories are studied in the phase space
+
+$$
+(\psi,\chi).
+$$
